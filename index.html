@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Dice Battle | Two Player Game</title>
+
+<link rel="stylesheet" href="app.css">
+
+
+</head>
+
+<body>
+
+
+<div class="game-container">
+
+    <header class="game-header">
+        <h1>🎲 Dice Battle</h1>
+        <p>Challenge your friend and become the champion!</p>
+    </header>
+
+    <!-- Game Status -->
+    <section class="game-status">
+        <h2 id="gamestatush2">Ready to Play?</h2>
+        <p id="gamestatusp">Roll the dice and test your luck!</p>
+    </section>
+
+    <section class="players-container">
+
+       
+        <div class="player-card player-one">
+
+            <div class="player-heading">
+                <span class="player-icon">🔵</span>
+                <h2>Player 1</h2>
+            </div>
+
+            <p class="player-label">YOUR DICE</p>
+
+            <div class="dice diceblue">
+                <span id="dicebluespan">⚄</span>
+            </div>
+
+            <p class="dice-number">
+                Dice Number: <strong id="playeronedicenumberstrong">0</strong>
+            </p>
+
+            <div class="score-box">
+                <p>Round Wins</p>
+                <h3 id="playeronescoreboxh3">0</h3>
+            </div>
+
+        </div>
+
+       
+        <div class="player-card player-two">
+
+            <div class="player-heading">
+                <span class="player-icon">🔴</span>
+                <h2>Player 2</h2>
+            </div>
+
+            <p class="player-label">YOUR DICE</p>
+
+            <div class="dice dice-red">
+                <span id="diceredspan">⚂</span>
+            </div>
+
+            <p class="dice-number">
+                Dice Number: <strong id="playertwodicenumberstrong">0</strong>
+            </p>
+
+            <div class="score-box">
+                <p>Round Wins</p>
+                <h3 id="playertwoscoreboxh3">0</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="game-controls">
+
+        <button class="roll-button" id="rollbutton">
+            🎲 Roll Both Dice
+        </button>
+
+        <button class="reset-button" id="resetbutton">
+            ↻ Reset Game
+        </button>
+
+    </section>
+
+   
+    <section class="rules-section">
+
+        <h2>📜 Game Rules</h2>
+
+        <ul>
+            <li>Both players roll their dice.</li>
+            <li>The player with the higher number wins the round.</li>
+            <li>If both numbers are equal, the round is a draw.</li>
+            <li>The first player to win 5 rounds wins the game.</li>
+        </ul>
+
+    </section>
+
+  
+    
+
+    <footer class="game-footer">
+        <p>Made with ❤️ by Ankit
+</p>
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
